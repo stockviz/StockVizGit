@@ -1,6 +1,5 @@
 
 #get internal index codes
-
 getLiveIndexMapping<-function(){
 	ret<-sqlQuery(lcon2, "select * from INDEX_MASTER")
 	return(ret)
@@ -8,7 +7,7 @@ getLiveIndexMapping<-function(){
 
 #get live index values
 getLiveIndexByDateRange<-function(indexCode, startDate, endDate){
-	stopifnot(is.numeric(indexCode), as.Date(startDate) < as.Date(endDate))
+	stopifnot(is.numeric(indexCode), as.Date(startDate) < as.Date(endDate), as.Date(startDate) >= as.Date('2016-03-01'))
 
 	sd<-as.numeric(as.POSIXct(startDate))
 	ed<-as.numeric(as.POSIXct(endDate))
@@ -21,3 +20,4 @@ getLiveIndexByDateRange<-function(indexCode, startDate, endDate){
 	xtsData<-xts(data$CUR_VAL, order.by=as.POSIXct(data$SERVER_TS, format='%y-%m-%d %H:%M:%S'))
 	return(xtsData)
 }
+
