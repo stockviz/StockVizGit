@@ -20,3 +20,13 @@ getEodIndexByDateRange<-function(indexName, startDate, endDate){
 	retXts<-xts(data[, -1], as.Date(data$TIME_STAMP))
 	return(retXts)
 }
+
+#get mutual fund NAV by scheme code of the fund
+getMfNavByDateRange<-function(schemeCode, startDate, endDate){
+	data<-sqlQuery(lcon, sprintf("select AS_OF, NAV
+								  FROM MF_NAV_HISTORY WHERE SCHEME_CODE=%d 
+								  and AS_OF >= '%s' and AS_OF <= '%s'", schemeCode, startDate, endDate))
+
+	retXts<-xts(data[, -1], as.Date(data$AS_OF))
+	return(retXts)
+}

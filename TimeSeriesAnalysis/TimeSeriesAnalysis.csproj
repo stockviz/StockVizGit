@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="drawdownblog1.R" />
+    <None Include="MncReturnsblog1.R" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="report\" />
