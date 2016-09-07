@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleLiveChart", "ExampleLiveChart\ExampleLiveChart.csproj", "{4E77B8FF-A6FC-4FD4-8DC4-1A00DC7B7997}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeSeriesAnalysis", "TimeSeriesAnalysis\TimeSeriesAnalysis.csproj", "{ABB14DD9-F119-4302-9AED-0CE08BBC414A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4E77B8FF-A6FC-4FD4-8DC4-1A00DC7B7997}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E77B8FF-A6FC-4FD4-8DC4-1A00DC7B7997}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E77B8FF-A6FC-4FD4-8DC4-1A00DC7B7997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB14DD9-F119-4302-9AED-0CE08BBC414A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB14DD9-F119-4302-9AED-0CE08BBC414A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB14DD9-F119-4302-9AED-0CE08BBC414A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB14DD9-F119-4302-9AED-0CE08BBC414A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

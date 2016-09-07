@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="common.R" />
+    <None Include="eod-api.R" />
     <None Include="live-api.R" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
