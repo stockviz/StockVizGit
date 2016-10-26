@@ -34,10 +34,17 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="drawdownblog1.R" />
+    <None Include="general.R" />
     <None Include="MncReturnsblog1.R" />
+    <None Include="niftyTrAnalysis.R" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
